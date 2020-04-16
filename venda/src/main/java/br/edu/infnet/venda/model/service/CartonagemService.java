@@ -30,4 +30,8 @@ public class CartonagemService {
 	public void excluir (Integer id) {
 		repository.deleteById(id);
 	}
+	
+	public List<Cartonagem> obterDisponiveis() {
+		return (List<Cartonagem>) repository.findAvailable();
+	}
 }

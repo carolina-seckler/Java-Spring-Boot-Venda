@@ -30,4 +30,8 @@ public class TecidoService {
 	public void excluir (Integer id) {
 		repository.deleteById(id);
 	}
+	
+	public List<Tecido> obterDisponiveis() {
+		return (List<Tecido>) repository.findAvailable();
+	}
 }

@@ -30,4 +30,8 @@ public class HibridoService {
 	public void excluir (Integer id) {
 		repository.deleteById(id);
 	}
+	
+	public List<Hibrido> obterDisponiveis() {
+		return (List<Hibrido>) repository.findAvailable();
+	}
 }
