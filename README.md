@@ -41,8 +41,8 @@ tecido
 	"utilitarios": true,
 	"tipo": "tecido"
 }
-cartonagem
 
+cartonagem
 {
 	"codigo": "AB4",
 	"descricao": "Bolsa2",
